@@ -1,0 +1,23 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+src/frontend.py
+test_*.py
+
+# Data files
+data/output/
+data/
+adhoc_scripts/
+
+# IDE/Editor specific
+.vscode/
+.idea/

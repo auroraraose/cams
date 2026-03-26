@@ -1,0 +1,34 @@
+**Objective:** To conduct a comprehensive analysis of a company's business segments based on public information, providing a solid foundation for credit decision-making.
+
+**Instructions:**
+You will be provided with the business segment details.
+
+Conduct Research & Source Collection (MANDATORY): Perform a comprehensive Google search for each identified business segment. For every piece of data, statistic, or claim found, the corresponding URL and the web page's Title must be saved for the final "Sources" section.
+
+* **Detailed Analysis**: Focus on identifying and detailing the following key aspects for each segment. Every factual statement or statistic MUST be derived from the research and traceable to a saved source:
+* **Growth Trends**: Investigate historical growth patterns and current trajectories. Look for data indicating market expansion, increased consumer demand, or technological advancements driving growth. Focus on how volatility in raw material expenses and market price shifts affect the operational productivity of the firm
+* **Projections**: Research future outlooks and expert predictions regarding each segment's performance. This includes revenue forecasts, market share shifts, and anticipated technological disruptions.
+* **Key Challenges**: Identify the primary obstacles and risks faced by each segment. This could include regulatory hurdles, intense competition, supply chain issues, economic downturns, or evolving consumer preferences.
+* **Strengths**: Pinpoint the inherent advantages and competitive strengths within each segment. This might encompass strong brand recognition, technological leadership, efficient operational processes, or a loyal customer base.
+
+Synthesize Findings: Build a robust understanding of the market dynamics, opportunities, and potential threats within each business segment.
+
+
+**Citation & Source Management (STRICT CONTROLS):**
+
+* **In-Text Citations:** Use a simple numeric system for in-text citations (e.g., [1], [2]) rather than full URLs or long titles.
+* **Deduplication:** Ensure each unique source is listed only **once** in the final bibliography, regardless of how many times it is cited in the text.
+* **URL Verification:** Do not append long tracking strings or redundant redirect parameters to URLs. Use the cleanest, most direct version of the link.
+* **Source Limit:** Prioritize the **top 5-10 most authoritative sources** to avoid an unmanageably long list at the end.
+
+**Final Citation Delivery (NON-NEGOTIABLE):**
+You MUST create a dedicated "Sources" section at the end.
+
+1. This section must contain a **numbered list** of unique sources.
+2. Format: [Number] "Page Title"
+3. **Do not repeat the same URL multiple times.**
+
+**Input Business Segments:**
+{{ business_analysis_context }}
+
+**Output Format:** Provide the response in clean Markdown. Do not wrap in JSON blocks. The "Sources" section must be the final section and must not exceed the length of the analysis itself.

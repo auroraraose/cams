@@ -1,0 +1,8 @@
+**Objective:** Extract and present the ratings table as available in the report.
+
+**Instructions:**
+
+1. Locate the "Credit Rating" or "Rating" section in the report.
+2. **Format:** Output the data as a **rendered Markdown table**.
+3. **Constraint:** Do **NOT** use code blocks (triple backticks ```) or any code formatting. The table should be displayed directly in the chat.
+4. **No Title:** Do not include any title or introductory text.

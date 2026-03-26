@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Assessment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <div class="sidebar-header">
+                <span style="background:var(--primary-color); width:24px; height:24px; border-radius:4px; display:inline-block;"></span>
+                Credit Assessment
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active"><span>🏠</span> Dashboard</a>
+                <a href="#" class="nav-item"><span>📂</span> Applications</a>
+                <a href="#" class="nav-item"><span>👥</span> Customers</a>
+                <a href="#" class="nav-item"><span>⚙️</span> Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item"><span>↪️</span> Logout</a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <header class="top-bar">
+                <input type="text" class="search-input" placeholder="Search applications...">
+                <div style="width: 32px; height: 32px; background: #e0e7ff; color: #3730a3; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8rem;">
+                    JD
+                </div>
+            </header>
+
+            <div class="content-scrollable">
+                <div class="page-header">
+                    <div>
+                        <h1>Dashboard</h1>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem;">Welcome back. Here's what's happening today.</p>
+                    </div>
+                    <button id="add-entity-btn" class="btn btn-primary">+ New Application</button>
+                </div>
+
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-content">
+                            <h4>Total Applications</h4>
+                            <p class="value">5</p>
+                        </div>
+                        <div class="stat-icon blue">📂</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-content">
+                            <h4>Pipeline Value</h4>
+                            <p class="value">₹3.25 Cr</p>
+                        </div>
+                        <div class="stat-icon purple">📈</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-content">
+                            <h4>Pending Review</h4>
+                            <p class="value">3</p>
+                        </div>
+                        <div class="stat-icon orange">⚠️</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-content">
+                            <h4>Approved (MTD)</h4>
+                            <p class="value">1</p>
+                        </div>
+                        <div class="stat-icon green">✅</div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div style="padding: 1.5rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="margin: 0; font-size: 1.1rem;">Recent Applications</h3>
+                        <button class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">Filter</button>
+                    </div>
+                    
+                    <div id="company-list-container">
+                        <div style="padding: 2rem; text-align: center; color: #9ca3af;">Loading data...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

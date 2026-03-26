@@ -1,0 +1,14 @@
+Synthesize 5 critical financial highlights for the company. Specifically, evaluate the following areas: (i) year-over-year revenue growth; (ii) net profit margins and growth trends; (iii) the company's debt profile, including leverage ratios; and (iv) cash flow stability and liquidity. For each highlight, present the specific numerical data and provide a detailed explanation of the underlying operational or market factors responsible for the observed financial performance or shifts in the company's risk profile.
+
+Output Format: Provide the response in clean Markdown format with bullet points. Do not wrap in JSON blocks.
+
+Input Context:
+
+### Financial Commentary
+{{ financial_commentary_context }}
+
+### SWOT Analysis
+{{ swot_analysis_context }}
+
+### Forensic Analysis
+{{ forensics_analysis_context }}

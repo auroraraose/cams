@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity Details</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="chat.css"> -->
+     <link rel="stylesheet" href="chat.css?v=1.1">
+</head>
+<body>
+    
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <div class="sidebar-header">
+                <span style="background:var(--primary-color); width:24px; height:24px; border-radius:4px; display:inline-block;"></span>
+                Credit Assessment
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <span>🏠</span> Dashboard
+                </a>
+                <a href="#" class="nav-item active">
+                    <span>📂</span> Applications
+                </a>
+                <!-- <a href="#" class="nav-item">
+                    <span>👥</span> Customers
+                </a> -->
+                <a href="settings.html" class="nav-item">
+                    <span>⚙️</span> Settings
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item"><span>↪️</span> Logout</a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            
+            <header class="top-bar">
+                <div class="breadcrumb">Applications / <span id="breadcrumb-name">Entity Details</span></div>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <div style="width: 32px; height: 32px; background: #e0e7ff; color: #3730a3; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8rem;">JD</div>
+                </div>
+            </header>
+
+            <div class="content-scrollable">
+                
+                <div class="page-header">
+                    <div>
+                        <h1 id="entity-name-header">Loading...</h1>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem;">Application ID: APP-2024-001 • Status: <span style="background: #e0f2fe; color: #0284c7; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">In Progress</span></p>
+                    </div>
+                    <div class="header-actions">
+                        <button id="generate-btn" class="btn btn-primary">Generate CAM</button>
+                        <button id="refresh-memo-btn" class="btn btn-secondary">Refresh CAM</button>
+                        <button id="financials-btn" class="btn btn-secondary" disabled>Excel Export</button>
+                    </div>
+                </div>
+
+                <nav class="tabs-nav">
+                    <button class="tab-btn active" data-tab="financials">Financials</button>
+                    <button class="tab-btn" data-tab="cam">CAM Analysis</button>
+                    <button class="tab-btn" data-tab="documents">Documents</button>
+                </nav>
+
+                <main>
+                    
+                    <div id="financials" class="tab-content active">
+                        <div class="table-container">
+                            <div style="padding: 1.5rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+                                <h3 style="margin: 0; font-size: 1.1rem;">Extracted Financial Data</h3>
+                                <button id="refresh-financials-btn" class="btn btn-secondary" style="font-size: 0.8rem;">Refresh Data</button>
+                            </div>
+                            <div id="extracted-data-container" style="padding: 0;"></div>
+                        </div>
+                    </div>
+
+                    <div id="cam" class="tab-content">
+                        <div class="cam-layout">
+                            <aside class="cam-sidebar">
+                                <div class="cam-sidebar-group">
+                                    <div class="cam-sidebar-header">Executive Summary</div>
+                                    <button class="cam-sidebar-btn" data-view="borrower_profile">Borrower Profile</button>
+                                    <button class="cam-sidebar-btn" data-view="promoter">Promoter</button>
+                                    <button class="cam-sidebar-btn" data-view="business">Business</button>
+                                    <button class="cam-sidebar-btn" data-view="financial_profile_summary">Financial Profile</button>
+                                    <button class="cam-sidebar-btn" data-view="rating">Rating</button>
+                                </div>
+                                
+                                <div class="cam-sidebar-group">
+                                    <div class="cam-sidebar-header">Risk Analysis</div>
+                                    <button class="cam-sidebar-btn" data-view="swot">SWOT</button>
+                                    <button class="cam-sidebar-btn" data-view="media_monitoring">Media Monitoring</button>
+                                    <button class="cam-sidebar-btn" data-view="forensics">Forensics</button>
+                                    <button class="cam-sidebar-btn" data-view="business_analysis">Business Analysis</button>
+                                    <button class="cam-sidebar-btn" data-view="industry_analysis">Industry Analysis</button>
+                                </div>
+                                
+                                <div class="cam-sidebar-group">
+                                    <div class="cam-sidebar-header">Financial Analysis</div>
+                                    <button class="cam-sidebar-btn" data-view="financial_commentary">Financial Commentary</button>
+                                    <button class="cam-sidebar-btn" data-view="earnings_call">Earnings Call Analysis</button>
+                                </div>
+                                
+                                <div class="cam-sidebar-group">
+                                    <div class="cam-sidebar-header">Non-Compliance</div>
+                                    <button class="cam-sidebar-btn" data-view="non_compliance_financial">Financial</button>
+                                </div>
+                            </aside>
+                            
+                            <section class="cam-viewer">
+                                <div class="cam-viewer-header">
+                                    <h2 id="cam-viewer-title">Select a section</h2>
+                                    <button id="regenerate-section-btn" class="btn btn-secondary" style="display: none; font-size: 0.8rem;">Regenerate</button>
+                                </div>
+                                <div class="cam-viewer-content">
+                                    <div id="cam-content" class="markdown-body">
+                                        <div class="cam-placeholder" style="display:flex; justify-content:center; align-items:center; height:100%; color:#9ca3af;">
+                                            Select a section from the left menu to view analysis
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div id="documents" class="tab-content">
+                        <div class="table-container">
+                            <div style="padding: 1.5rem; border-bottom: 1px solid var(--border-color);">
+                                <h3 style="margin: 0; font-size: 1.1rem;">Uploaded Documents</h3>
+                            </div>
+                            <table class="company-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 40%;">Document Name</th>
+                                        <th style="width: 20%;">Type</th>
+                                        <th style="width: 15%;">Upload Date</th>
+                                        <th style="width: 10%;">Status</th>
+                                        <th style="width: 15%;">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="documents-table-body">
+                                    <tr>
+                                        <td colspan="5" style="text-align:center; padding: 2rem; color: #666;">Loading documents...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    <script src="utils.js"></script>
+    <script src="entity.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

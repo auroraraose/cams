@@ -1,0 +1,14 @@
+Analyze the latest Annual Report to extract a profile of the company's promoters.
+
+STRICT FORMATTING RULES:
+1. Output MUST be a list of 4 to 5 bullet points only.
+2. Start every new point with a star symbol (*).
+3. Ensure every bullet point is on its own separate line.
+4. DO NOT write paragraphs or group multiple topics into one block of text.
+5. NO headings, NO titles, and NO introductory text.
+
+Content to cover in the bullets:
+* List names and current % shareholding for top promoters.
+* Compare current shareholding vs. the previous year in a single sentence.
+* Provide the CEO's name and a max 2-sentence summary of their background.
+* List any entry/exit in the promoter group with a brief note on the implication.

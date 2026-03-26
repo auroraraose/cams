@@ -1,0 +1,144 @@
+{
+  "fieldsToExtract": [
+    {
+      "fieldName": "Net Sales",
+      "aliases": ["Net Sales"],
+      "extractionGuidance": "Look for Total Revenue from operations",
+      "rowID": 12,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "EBITDA",
+      "aliases": ["EBITDA"],
+      "extractionGuidance": "Calculate this by taking Total profit before tax and adding back Finance costs and Total depreciation, depletion and amortisation expense",
+      "rowID": 13,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "PAT",
+      "aliases": ["Profit After Tax"],
+      "extractionGuidance": "Profit After Tax",
+      "rowID": 23,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Net Cash Flows",
+      "aliases": ["Net Cash Flows"],
+      "extractionGuidance": "Net Cash Flows",
+      "rowID": 24,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "TNW",
+      "aliases": ["Total Net Worth","Total  Equity"],
+      "extractionGuidance": "Total Net Worth",
+      "rowID": 26,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "LT debt (excl CPLTD)",
+      "aliases": ["LT debt (excl CPLTD)"],
+      "extractionGuidance": "Look in Total non-current liabilities for Long term borrowings",
+      "rowID": 27,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "CPLTD",
+      "aliases": ["CPLTD"],
+      "extractionGuidance": "only if not explicitly mentioned, use 'Short term borrowings' as a proxy for CPLTD",
+      "rowID": 28,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "WC",
+      "aliases": ["Working Capital"],
+      "extractionGuidance": "Calculated as Current Assets - Current Liabilities",
+      "rowID": 28,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Total interest bearing debt",
+      "aliases": ["Total interest bearing debt"],
+      "extractionGuidance": "Sum of Long term borrowings and Short term borrowings",
+      "rowID": 29,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Total assets",
+      "aliases": ["Total assets"],
+      "extractionGuidance": "Total assets",
+      "rowID": 30,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "EBITDA Margin (%)",
+      "aliases": ["EBITDA Margin (%)"],
+      "extractionGuidance": "Calculated as (EBITDA / Total revenue from operations) * 100",
+      "rowID": 31,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Net Margin (%)",
+      "aliases": ["Net Margin (%)"],
+      "extractionGuidance": "Calculated as (PAT / Total revenue from operations) * 100",
+      "rowID": 34,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Total External Debt/TNW",
+      "aliases": ["Total External Debt/TNW"],
+      "extractionGuidance": "Calculated as (Total interest bearing debt / TNW)",
+      "rowID": 36,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "External Debt/EBITDA",
+      "aliases": ["External Debt/EBITDA"],
+      "extractionGuidance": "Calculated as (Total interest bearing debt / EBITDA)",
+      "rowID": 38,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Current Ratio",
+      "aliases": ["Current Ratio"],
+      "extractionGuidance": "Divide Total current assets by Total current liabilities",
+      "rowID": 40,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Interest Cover",
+      "aliases": ["Interest Cover"],
+      "extractionGuidance": "Calculated as (EBIT / Finance costs)",
+      "rowID": 0,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "DSCR",
+      "aliases": ["DSCR"],
+      "extractionGuidance": "if not explicitly found, then calculate EBIT (Profit Before Tax + Finance Costs) and divide by total debt service (Finance Costs + Short term borrowings from balance sheet as proxy for principal repayments), noting the principal repayment is an approximation",
+      "rowID": 0,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Accounts Receivable Days",
+      "aliases": ["Accounts Receivable Days"],
+      "extractionGuidance": "Calculated as (Trade receivables current / Total revenue from operations) * 365",
+      "rowID": 43,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Accounts Payable Days",
+      "aliases": ["Accounts Payable Days"],
+      "extractionGuidance": "Calculated as (Trade payables current / (Cost of materials consumed + Purchases of stock-in-trade)) * 365",
+      "rowID": 15,
+      "sheetName": "Form-II"
+    },
+    {
+      "fieldName": "Inventory turnover days",
+      "aliases": ["Inventory turnover days"],
+      "extractionGuidance": "Calculated as (Inventories / Cost of Goods Sold) * 365. Cost of goods sold can be derived from COGS derived from 'Cost of materials consumed' + 'Purchases of stock-in-trade' + 'Changes in inventories of finished goods, work-in-progress and stock-in-trade'. ",
+      "rowID": 46,
+      "sheetName": "Form-II"
+    }
+  ]
+}

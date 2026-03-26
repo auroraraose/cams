@@ -1,0 +1,10 @@
+**Context:** Act as a financial analyst. Locate the **Standalone Financial Statements** section in the attached annual report.
+**Task:**
+1. Focus **EXCLUSIVELY** on the column headers of the three primary financial tables: **Balance Sheet**, **Statement of Profit and Loss**, and **Cash Flow Statement**.
+2. **IGNORE** all "Notes to Accounts," "Management Discussion," or supplementary schedules.
+3. Extract the fiscal year indicators using the following **Strict Formatting Logic**:
+* **Condition A:** If the header already contains "FY" (e.g., "FY 2024", "FY23", "FY 2023-24"), **extract it exactly as written**.
+* **Condition B:** If the header is a date phrase (e.g., "As at 31 March 2024", "For the year ended 31 March 2023"), **convert it to the 4-digit year format "YYYY"** (e.g., "31 March 2024" becomes "2024").
+4. **CRITICAL STEP:** Remove all duplicate values to create a **UNIQUE** list.
+**Output format:**
+Return **ONLY** a single, comma-separated list of the final labels (e.g., FY 2024-25, FY23). Do not generate bullet points or explanations.

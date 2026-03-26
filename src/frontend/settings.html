@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - SME Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <div class="sidebar-header">
+                <span style="background:var(--primary-color); width:24px; height:24px; border-radius:4px; display:inline-block;"></span>
+                SME Manager
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item"><span>🏠</span> Dashboard</a>
+                <a href="index.html" class="nav-item"><span>📂</span> Applications</a>
+                <a href="#" class="nav-item"><span>👥</span> Customers</a>
+                <a href="settings.html" class="nav-item active"><span>⚙️</span> Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item"><span>↪️</span> Logout</a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <header class="top-bar">
+                <div class="breadcrumb">SME Manager / <span style="color:var(--text-main); font-weight:500;">Settings</span></div>
+                <div style="width: 32px; height: 32px; background: #e0e7ff; color: #3730a3; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8rem;">
+                    JD
+                </div>
+            </header>
+
+            <div class="content-scrollable">
+                
+                <div class="page-header">
+                    <div>
+                        <h1>Settings</h1>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem;">Manage your preferences and configurations.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; align-items: center; min-height: 400px; background: white; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                    <div style="text-align: center; max-width: 400px; padding: 2rem;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🚧</div>
+                        <h2 style="margin: 0 0 0.5rem 0; color: var(--text-main);">Coming Soon</h2>
+                        <p style="color: var(--text-muted); line-height: 1.5;">
+                            We are working hard to build the settings module. <br>
+                            You will soon be able to configure user roles, notifications, and system preferences here.
+                        </p>
+                        <button onclick="history.back()" class="btn btn-primary" style="margin-top: 1.5rem;">Go Back</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+**Objective:**
+Analyze the provided financial data (JSON format) and evaluate the following three mandatory financial benchmarks:
+
+1. **PAT (Profit After Tax):** Must be positive for the last 2 years. *Policy Rule: Not Applicable for entities with revenue > ₹200 crores.*
+2. **Interest Coverage Ratio:** Minimum 1.50 for manufacturing entities with revenue > ₹200 crores.
+3. **Current Ratio:** Minimum 1.10 for manufacturing entities with revenue > ₹200 crores.
+
+**Input Data Processing Instructions:**
+
+* **Identify Entity Type:** Determine if the company is a Trading, Service, or Manufacturing entity based on the available data/context.
+* **Extract Revenue Scale:** Check the revenue in the data to see which policy tier applies (e.g., > ₹200 Cr).
+* **Find the Values:** Locate the "Net Profit," "Interest Coverage," and "Current Ratio" in the provided financial tables/data.
+
+**Output Format & Table Constraints:**
+Return the response in standard Markdown format. Create a Markdown table with these exact headers: **"Financial Ratio Benchmark"**, **"Actual Value"**, **"Compliance"**, **"Comments/Justifications"**.
+
+**Strict Formatting Rules for Table Balance:**
+
+* **Use Multi-line Cells:** For the **"Actual Value"** and **"Comments/Justifications"** columns, use `<br/>` tags to separate data by year (e.g., `FY25: Value <br/> FY24: Value`).
+* **Limit Column Width:** Do not write long, continuous paragraphs in the "Comments" column. Break sentences into smaller chunks using `<br/>` to prevent the table from stretching horizontally.
+* **Data Placement:** Place all specific numeric values for the last 2 years in the **"Actual Value"** column so the "Comments" column stays concise.
+
+**Compliance Logic:**
+
+* **Complied:** If the value meets or exceeds the benchmark.
+* **Partially Complied:** If the value is marginally below or meets criteria for only 1 of 2 years.
+* **Not Complied:** If the value fails the benchmark.
+* **Not Applicable:** If the company's revenue/sector tier exempts them from the rule.
+
+**Input Data:**
+{{ financial_data }}

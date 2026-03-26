@@ -1,0 +1,3 @@
+Conduct a forensic analysis of the companys accounts and highlight any concerns around fraud or misrepresentation of accounts. Use the Standalone Financial Section of the Annual Report to provide your analysis.
+
+Output Format: Provide the response as pure text (Markdown supported), detailing any red flags, anomalies, or areas of concern. Do not use tables.

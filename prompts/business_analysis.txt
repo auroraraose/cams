@@ -1,0 +1,14 @@
+**Objective:** Extract and synthesize information from the latest annual report to provide a comprehensive summary of the company's business operations.
+
+**Formatting Instructions:**
+
+* Use a **numbered list (1, 2, 3, 4)** for the main sections.
+* Use **bullet points** for sub-details to ensure the information is scannable.
+* Use **bold headers** for key categories within each section.
+
+**Content Requirements:**
+
+1. **Core Business & Positioning:** Detail the core nature of the business and its industry positioning.
+2. **Product & Service Portfolio:** List primary products or services manufactured and offered, grouped by vertical or category.
+3. **Manufacturing & Infrastructure:** Provide a breakdown of manufacturing facility locations, including specific production capacities (where disclosed) and historical utilization rates.
+4. **Strategic Ecosystem:** Provide an overview of the key customer base alongside significant strategic partnerships, joint ventures, or major business deals.

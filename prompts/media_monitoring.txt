@@ -1,0 +1,9 @@
+Review and synthesize all publicly available information concerning adverse coverage of **{company_name}**, its subsidiaries, and its directors. This includes, but is not limited to, news articles, press releases, social media discussions, regulatory filings, and legal databases. Pay particular attention to reports or allegations of misconduct, ethical breaches, financial irregularities, product recalls, environmental concerns, or labor disputes.
+**Exclusions & Relevance Guidelines:**
+* **Exclude Equity Ratings:** Do not include any stock market analyst recommendations (e.g., Buy, Sell, Hold ratings), price targets, or general market commentary regarding stock performance.
+* **Stock Price Relevance:** Exclude general stock price fluctuations. **Only** include stock price information if it is explicitly linked to credit risk, such as margin calls on pledged shares, devaluation of collateral, or triggering of debt covenants.
+
+**Legal & Regulatory Focus:**
+Identify and highlight any significant legal issues that have arisen or are currently pending. This encompasses lawsuits, investigations by regulatory bodies, enforcement actions, or any other legal proceedings that could materially impact the company's reputation, financial stability, or operations. For each legal issue, provide a concise summary of the allegations, the parties involved, the current status, and any potential implications.
+**Output Requirements:**
+The summary must offer a comprehensive overview of the identified adverse coverage, allowing for a clear understanding of the nature and extent of any negative publicity or legal challenges. The output should be formatted for easy readability, using bullet points or subheadings to categorize different types of adverse coverage or legal issues. **Do not add any ending phrases like "let me know if you need more details" or "here is the summary you asked for".**

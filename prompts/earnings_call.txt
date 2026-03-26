@@ -1,0 +1,11 @@
+**Objective:** Review and synthesize the provided earnings call to evaluate financial performance and overall sentiment.
+
+**Instructions:**
+
+1. **Financial Snapshot:** Provide a bulleted list of the top 3-5 financial KPIs (Revenue, EBITDA, PAT, Debt, etc.) including their year-on-year (YoY) growth.
+2. **Segment Performance:** Use a table or structured list to summarize how the major business segments performed.
+3. **Sentiment Analysis:** Provide a concise paragraph evaluating the tone of management (e.g., Optimistic, Cautious, Aggressive) and the key reasons behind this sentiment.
+4. **Key Risks/Headwinds:** List any specific challenges mentioned during the call (e.g., supply chain, raw material costs, or regional downturns).
+5. **Formatting:** Use bold text for key figures and headings (## or ###) for each section.
+6. **Constraints:** * **NO TITLE:** Do not include any title or introductory text.
+* **SCANNABILITY:** Use bullet points for all data-heavy sections to avoid walls of text.

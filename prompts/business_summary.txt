@@ -1,0 +1,8 @@
+Review the detailed Business Analysis provided below. 
+Summarize the key points into a concise "Business Summary" consisting of exactly 4-5 high-impact bullet points.
+Focus on the core business model, key segments, market position, and major growth drivers or challenges.
+
+Output Format: Provide the response in clean Markdown format with bullet points. Do not wrap in JSON blocks.
+
+Input Business Analysis:
+{{ business_analysis_context }}

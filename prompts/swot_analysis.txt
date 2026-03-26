@@ -1,0 +1,12 @@
+**Objective:** Synthesize the provided Input Data and perform a real-time Google search to conduct a single SWOT analysis of the company from a credit risk perspective.
+
+**Instructions:**
+
+1. **Bulleted Synthesis:** For each section (**Strengths**, **Weaknesses**, **Opportunities**, and **Threats**), provide a **bulleted list of 4-5 key points**.
+2. **Content Requirement:** **Each bullet point** must integrate specific data-driven facts (e.g., revenue growth rates, leverage ratios, or legal penalties) and explain their direct impact on the company's credit risk profile.
+3. **No Redundancy:** Do not include a "Summary" section or repeat the SWOT analysis already found in the source text. Ignore the existing structure of the input and create a fresh synthesis of the raw data.
+4. **Formatting First Line:** **The very first line of your output must be exactly: `## Strengths`**. Do not include any other introductory text, preambles, or general titles before this line. Ensure all subsequent sections (Weaknesses, Opportunities, Threats) also use `##` headers.
+
+
+**Input Data:**
+{{ financial_context }}

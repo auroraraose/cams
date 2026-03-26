@@ -1,0 +1,60 @@
+# VERTEXAI = TRUE
+PROJECT= 
+LOCATION=us-central1
+
+
+# Environment Configuration for ICICI Data Extraction Platform
+# Rename this file to .env and add your actual values
+
+# Google Cloud Project Configuration
+
+GCS_BUCKET_NAME=
+
+# Google Cloud Credentials (optional - can use default credentials)
+# GOOGLE_APPLICATION_CREDENTIALS=
+
+# Backend API Configuration
+BACKEND_URL="http://localhost:8000"
+
+# Example values:
+# PROJECT="icici-financial-data"
+# LOCATION="us-central1"
+# GCS_BUCKET_NAME="icici-data-extraction"
+
+# AgentSpace app/engine ID (find with Discovery Engine API)
+# AS_APP=
+
+# Assistant ID within the AgentSpace app (usually "default_assistant")
+# ASSISTANT_ID=default_assistant
+
+# -- AI Model Configuration --
+GEMINI_FLASH_MODEL="gemini-2.5-flash"
+GEMINI_PRO_MODEL="gemini-2.5-pro"
+
+# -- Generation Parameters --
+TEMPERATURE=0.1
+TOP_P=0.9
+MAX_OUTPUT_TOKENS=65535
+CANDIDATE_COUNT=1
+
+# -- Application Logic --
+MAX_RETRIES=3
+OUTPUT_DATA_DIR="data/output"
+SCRIPT_DIR="scripts"
+
+# -- GCS Configuration --
+GCS_COMPANIES_FOLDER="companies"
+GCS_PROMPTS_FOLDER="prompts"
+
+# -- Prompt Configuration --
+# SUMMARY_PROMPT_NAME="summary"
+# INDUSTRY_ANALYSIS_PROMPT_NAME="industry_analysis"
+# RATIO_ANALYSIS_PROMPT_NAME="ratio_analysis"
+# MEDIA_MONITORING_PROMPT_NAME="media_monitoring"
+# SHAREHOLDING_PATTERN_PROMPT_NAME="shareholding_pattern"
+SIMPLE_EXTRACTION_PROMPT_NAME="simple_extraction"
+
+# -- File Processing --
+# FINANCIALS_SHEET_NAME="Financials"
+# HEADER_ROW=2
+# DATA_START_ROW=3

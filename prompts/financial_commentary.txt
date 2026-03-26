@@ -1,0 +1,13 @@
+Objective: Extract a structured financial table and provide a qualitative performance evaluation for the years {{ discovered_years }}.
+
+Output Format: Return the response in standard Markdown format.
+Include a table with headers for 'Particulars' and each discovered year.
+Follow with analysis sections using headers (##) and paragraphs.
+
+Structure Guide:
+Table: 'Particulars' column should include units.
+Populate the rows with the following metrics exactly as found in the report: Net Sales, EBITDA, PAT, Net Cash flows, TNW, LT debt (excl. CPLTD), CPLTD, WC, Total interest bearing debt, Total assets, EBITDA Margin (%), Net Margin (%), Total External Debt/TNW, External Debt/EBITDA, Current Ratio, Interest Cover, DSCR, Accounts Receivable Days, Accounts Payable Days, and Inventory turnover days.
+Data Source: Use ONLY the provided JSON data. Each key in the JSON represents a fiscal year.
+
+Input Data (JSON):
+{{ financial_data }}
