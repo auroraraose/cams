@@ -17,7 +17,7 @@ GCS_BUCKET_NAME=
 BACKEND_URL="http://localhost:8000"
 
 # Example values:
-# PROJECT="icici-financial-data"
+# PROJECT=""
 # LOCATION="us-central1"
 # GCS_BUCKET_NAME="icici-data-extraction"
 
