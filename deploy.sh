@@ -41,7 +41,7 @@ load_env_vars() {
 load_env_vars
 
 # Configuration - with fallback values if not in .env
-PROJECT_ID="${PROJECT:-mb-poc-352009}"  # Uses PROJECT from .env or fallback
+PROJECT_ID="${PROJECT:-**********}"  # Uses PROJECT from .env or fallback
 SERVICE_NAME="listed-company-credit-assessment"
 REGION="${LOCATION:-us-central1}"  # Uses LOCATION from .env or fallback
 GCS_BUCKET="${GCS_BUCKET_NAME:-cams-i}"  # Uses GCS_BUCKET_NAME from .env or fallback
