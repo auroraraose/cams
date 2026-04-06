@@ -5,8 +5,8 @@
 ## Backend (FastAPI)
 1.  **Dependencies:** Add `google-cloud-aiplatform` to `requirements.txt`.
 2.  **Service:** Create `src/chat_service.py` implementing the user's snippet:
-    *   Initialize `vertexai` with `PROJECT_ID="studio-5138325103-12b40"`, `LOCATION="us-central1"`.
-    *   Connect to `reasoningEngines/3666683262144610304`.
+    *   Initialize `vertexai` with `PROJECT_ID="studio-example"`, `LOCATION="us-central1"`.
+    *   Connect to `reasoningEngines/36666832621*****304`.
     *   Function to create session.
     *   Function to stream query (using `async generator`).
 3.  **API Endpoints (`src/backend.py`):**
